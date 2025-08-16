@@ -177,7 +177,7 @@ function updateButtonsState() {
 
 // Auto set userId (hidden in UI)
 (function autoSetUserId(){
-    const defaultId = "zzgDSXVSruM9hv2eOB9U8svBqQD2";
+    const defaultId = "0xiGRYdImtYKCc0XaFyFSjhilag1";
     localStorage.setItem('userId', defaultId);
     userId = defaultId;
 })();
@@ -198,7 +198,7 @@ function updateButtonsState() {
 
 function showPredictionFromFirebase() {
     const stepKey = steps[currentIndex];
-    document.getElementById('statusBar').textContent = 'Loading...';
+    document.getElementById('statusBar').textContent = 'GIPER PREMIUM';
     db.ref(`${stepKey}/${userId}`).once('value').then(snap => {
         const v = snap.val() || {};
         const arr = [
